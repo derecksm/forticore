@@ -1,0 +1,589 @@
+/* =============== 
+  body
+  =============== */
+  @font-face {
+    font-family: montserratBold;
+    src: url(../fonts/montserrat-mold.ttf)
+}
+
+  html {
+    scroll-behavior: smooth;
+    position: relative;
+    min-height: 100%;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+a {
+    text-decoration: none;
+}
+
+/* =============== 
+  Desktop View
+  =============== */
+/* =============== 
+  header
+  =============== */
+#spacer{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #333333;
+    color: #FFFFFF;
+    text-align: center;
+    height: 4vh;
+    width: 100%;
+    display:grid;
+    align-items: center;
+    font-size: 13px;
+}
+#header {
+    display: grid;
+    grid-template-columns: 20% 1fr 1fr 1fr 1fr 20%;
+    grid-template-rows: 23vh 25vh;
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 55vh;
+} 
+
+.logo {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    align-self: center;
+}
+
+.nav-item-bar {
+    grid-column: 4 / span 3;
+    grid-row: 1 / span 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: .5s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.a-link {
+    text-decoration: none;
+    color: white;
+    margin: 0px 30px
+}
+.a-link:hover{
+    border-bottom: 4px solid white;
+    transition: .25s;
+        -webkit-transition: .25s;
+        -moz-transition: .25s;
+        -ms-transition: .25s;
+        -o-transition: .25s;
+}
+  #section-1 {
+    grid-column: 2 / span 3;
+    grid-row: 2 / span 1;
+    font-size: 50px;
+    color: white;
+    font-family: montserratBold;
+    line-height: 60px;
+}
+@media screen and (max-width: 1255px) {
+    .nav-item-bar {
+        font-size: 14px;
+        transition: .5s
+    }
+    
+}
+
+
+/* =============== 
+  Main Body
+  =============== */
+
+#grid {
+    display: grid;
+    grid-template-columns: 20% 1fr 1fr 20%;
+    grid-template-rows: .70fr .70fr .35fr 1fr 1fr .25fr;
+}
+
+#about-forticore{
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 1;
+    display: grid;
+    grid-template-columns: 20% 1fr 1fr 20%;
+    grid-template-rows: 1fr;
+    background-image: url(../images/hexagons.png);
+    background-repeat: no-repeat;
+    min-height: 50vh;
+
+}
+#intro-img{
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 1;
+    height: auto;
+    width: 100%;
+    background-image: url(../images/molecule.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: montserratBold;
+}
+#section-2-grid{
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+    align-self: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+#how-forticore-works{
+    background-image: url(../images/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 1;
+    display: grid;
+    grid-template-columns: 20% 1fr .25fr 1fr 20%;
+    grid-template-rows: 1fr;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 50vh;
+}
+#how-it-works{
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    justify-self: center;
+    align-self: center;
+    font-size: 30px;
+    line-height: 38px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    border-left: solid 6px #E30000;
+}
+#section-3-grid{
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 1;
+    text-align: left;
+    align-self: center;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 28px;
+
+}
+.boldNum{
+    font-family: montserratBold;
+}
+#shop{
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 1;
+    justify-self: left;
+    align-self: end;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+#section-4-h{
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    font-family: montserratBold;
+    line-height: 50px;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1
+}
+#section-4-p{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 35px;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1
+}
+ #section-5{
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 1;
+    display: grid;
+    grid-template-columns: 20% 2fr 1fr 20%;
+    grid-template-rows: 1fr;
+}
+#incipio-aerolite{
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    align-self: center;
+    justify-self: center;
+    height: auto;
+    width: 100%;
+
+}
+#section-5-grid {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    justify-self: left;
+    align-self: center;
+    font-family: 'Montserrat', sans-serif;
+
+} 
+#section-6{
+    grid-column: 1 / span 4;
+    grid-row: 5 / span 1;
+    display: grid;
+    grid-template-columns: 20% 1fr 2fr 20%;
+    grid-template-rows: 1fr;
+}
+#griffin-survivor{
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    align-self: center;
+    justify-self: center;
+    height: auto;
+    width: 100%;
+}
+#section-6-grid{
+    grid-column: 2 / span 1;
+    grid-row: 1 / span1;
+    justify-self: left;
+    align-self: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.section-header{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 38px;
+    color:#333333;
+    padding-bottom: 15px;
+    font-family: montserratBold;
+
+}
+.section-p{
+    font-size: 18px;
+    color:#333333;
+    line-height: 28px;
+}
+.button{
+    background-color: #E30000;
+    border-radius: 25px;
+    color: white;
+    padding: 13px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-family: montserratBold;
+}
+.redline{
+    color: #E30000;
+    font-family: montserratBold;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.button-space {
+    margin-bottom: 5vh;
+}
+
+/* =============== 
+    TABLET
+=============== */
+@media screen and (max-width: 1119px) {
+    #header {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        background-position-x: 50%;
+    }
+    
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        font-size: 30px;
+        height: 70px;
+        text-decoration: none;
+        padding-top: 25px;
+        margin:auto;
+        height: 50px;
+    }
+    
+    .nav-item-bar {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        padding: 10px;
+    }
+    .a-link{
+        margin: 0px;
+    }
+    
+    .nav-item {
+        margin: 15px;
+    }
+    #section-1{
+        font-size: 38px;
+        line-height: 46px;
+        height: 30vh;
+        width: 75vw;
+        margin: auto;
+        display: flex;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+    }
+  
+    .section-header{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .section-p {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    #grid {
+        display: grid;
+        grid-template-columns: 10% 1fr 10%;
+        grid-template-rows: .75fr .75fr .2fr .5fr .5fr .25fr;
+    }
+  
+    #about-forticore{
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 1;
+        grid-template-columns: 10% 1fr 10%;
+        grid-template-rows: 1fr;
+        background-size: cover
+    }
+    #intro-img{
+    display: none;
+    }
+    #section-2-grid{
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+        align-self: center;
+
+    }
+    #how-forticore-works{
+        grid-column: 1 / span 3;
+        grid-row: 2 / span 1;
+        display: grid;
+        background-size: cover;
+        grid-template-columns: 10% 1fr 10%;
+        grid-template-rows: .75fr .5fr;
+        padding: 40px 0px;
+    }
+    #how-it-works{
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+        font-size: 32px;
+        line-height: 40px
+    }
+    #section-3-grid{
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+        grid-gap: 1vh;
+        align-self: start;
+        font-size: 20px;
+        line-height: 28px;
+
+    }
+    #shop{
+        grid-column: 2 / span 1;
+        grid-row: 3 / span 1;
+        align-self: center;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: .5fr 1fr;
+    }
+    #section-4-h{
+        font-size: 28px;
+        line-height: 36px;
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+    #section-4-p{
+        font-size: 20px;
+        line-height: 28px;
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+    }
+
+    #section-5{
+        grid-column: 2 / span 1;
+        grid-row: 4 / span 1;
+        grid-template-columns: 5% 1fr 5%;
+        grid-template-rows: 1fr .5fr;
+        padding-bottom: 1vh
+    }
+    #incipio-aerolite{
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+       margin-left: 15vw;
+    }
+    #section-5-grid{
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+    }
+    #section-6{
+        grid-column: 2 / span 1;
+        grid-row: 5 / span 1;
+        grid-template-columns: 5% 1fr 5%;
+        grid-template-rows: 1fr .5fr;
+        margin-top: 5vh
+    }
+    #griffin-survivor{
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+        margin-right: 6vh;
+    }
+    #section-6-grid{
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+    }
+    
+    .button{
+        margin: 1.75vh auto;
+        font-size: 12px;
+        padding: 18px 48px;
+        font-family: montserratBold;
+        display: table;
+        line-height: 15px;
+    }
+   
+   }
+
+/* =============== 
+    Mobile View
+=============== */
+
+@media screen and (max-width: 695px) {
+
+/* =============== 
+    Header
+=============== */
+
+
+/* =============== 
+    Body
+=============== */
+    #grid {
+        display: grid;
+        grid-template-columns: 10% 1fr 10%;
+        grid-template-rows: .75fr .75fr .2fr .5fr .5fr .25fr;
+    }
+  
+    #about-forticore{
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 1;
+        grid-template-columns: 10% 1fr 10%;
+        grid-template-rows: 1fr;
+        background-size: cover
+    }
+    #intro-img{
+    display: none;
+    }
+    #section-2-grid{
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+        align-self: center;
+
+    }
+    #how-forticore-works{
+        grid-column: 1 / span 3;
+        grid-row: 2 / span 1;
+        display: grid;
+        background-size: cover;
+        grid-template-columns: 10% 1fr 10%;
+        grid-template-rows: .75fr 5% .5fr;
+        padding: 40px 0px;
+    }
+    #how-it-works{
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+        font-size: 20px;
+    }
+    #section-3-grid{
+        grid-column: 2 / span 1;
+        grid-row: 3 / span 1;
+        grid-gap: 1vh;
+        align-self: start;
+        font-size: 13px;
+        line-height: 20px;
+
+    }
+    #shop{
+        grid-column: 2 / span 1;
+        grid-row: 3 / span 1;
+        align-self: center;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: .5fr 1fr;
+    }
+    #section-4-h{
+        font-size: 20px;
+        line-height: 28px;
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+    #section-4-p{
+        font-size: 15px;
+        line-height: 20px;
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+    }
+
+    #section-5{
+        grid-column: 2 / span 1;
+        grid-row: 4 / span 1;
+        grid-template-columns: 5% 1fr 5%;
+        grid-template-rows: 1fr .5fr;
+        padding-bottom: 1vh
+    }
+    #incipio-aerolite{
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+       margin-left: 15vw;
+    }
+    #section-5-grid{
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+    }
+    #section-6{
+        grid-column: 2 / span 1;
+        grid-row: 5 / span 1;
+        grid-template-columns: 5% 1fr 5%;
+        grid-template-rows: 1fr .5fr;
+        margin-top: 5vh
+    }
+    #griffin-survivor{
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+        margin-right: 6vh;
+    }
+    #section-6-grid{
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+    }
+    
+
+    .section-header{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .section-p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .button{
+        margin: 1.75vh auto;
+        font-size: 12px;
+        padding: 18px 48px;
+        font-family: montserratBold;
+        display: table;
+        line-height: 15px;
+    }
+
+    
+}
+
